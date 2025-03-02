@@ -1,0 +1,27 @@
+class Myclass 
+{
+ Private int a: 
+ Public My class() 
+ System.out.print in ("Default Constructor"); 
+} 
+ Public My Class (int valve) 
+{ 
+ a= value; 
+ System.out. println ("Parameterized Constructor and value is: " + a); 
+} 
+ Public My Class (Myclass Other) 
+ { 
+  a = other.a; 
+  System.out.println("Copy Constructor and valve is: " +a); 
+ }
+}
+
+Public Class Pa1a
+{ 
+ pulic static void main(String[] args) 
+ { 
+  Myclass ob1 = new Myclass (); 
+  Myclass ob2 = new Mycluss (7); 
+  Myclass ob3 = new Myclass (ob2); 
+ }
+}

@@ -1,0 +1,33 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+public class MenuItmClk
+{
+	public static void main(String[] args)
+	{
+	   JFrame frame=new JFrame("Menu Item Click Demo");
+	   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	   JMenuBar menuBar=new JMenuBar();
+	   JMenu fileMenu=new JMenu("File");
+	   JMenuItem openItem=new JMenuItem("Open");
+	   JMenuItem saveItem=new JMenuItem("save");
+	   openItem.addActionListener(new ActionListener(){
+	    @Override
+	    public void actionPerformed(ActionEvent e){
+	      JOptionPane.showMessageDialog(frame,"File->Open clicked!");
+	      }
+	     });
+	    saveItem.addActionListener(new ActionListener(){
+	    @Override
+	    public void actionPerformed(ActionEvent e){
+	      JOptionPane.showMessageDialog(frame,"File->save clicked!");
+	      }
+	     });
+	   fileMenu.add(openItem);
+	    fileMenu.add(saveItem);
+	   menuBar.add(fileMenu);
+	   frame.setJMenuBar(menuBar);
+	   frame.setSize(400,300);
+	   frame.setVisible(true);
+	}
+}

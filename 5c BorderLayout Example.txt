@@ -1,0 +1,24 @@
+import javax.swing.*;
+import java.awt.*;
+public class DemoBorderLayout
+{
+	public static void main(String[] args)
+	{
+	   JFrame frame=new JFrame("Border Layout Example");
+	   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	   frame.setSize(300,300);
+	   JButton northbutton=new JButton("North");
+	   JButton southbutton=new JButton("South");
+	   JButton eastbutton=new JButton("East");	   
+	   JButton westbutton=new JButton("West");
+	   JButton centerbutton=new JButton("Center");
+	   Container contentPane=frame.getContentPane();
+	   contentPane.setLayout(new BorderLayout());
+	   contentPane.add(northbutton,BorderLayout.NORTH);
+	   contentPane.add(southbutton,BorderLayout.SOUTH);
+	   contentPane.add(eastbutton,BorderLayout.EAST);
+	   contentPane.add(westbutton,BorderLayout.WEST);
+	   contentPane.add(centerbutton,BorderLayout.CENTER);
+	   frame.setVisible(true);
+	}
+}

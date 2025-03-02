@@ -1,0 +1,21 @@
+Class DemoStaticMethods
+{
+ Public Static int add (int a, int b) 
+ {
+ return a+b; 
+ } 
+ Public static int sub (int a, int b) 
+ return a-b;
+ }
+} 
+Public class Pr1c
+{ 
+ Public static void Main (string[] args) 
+ {
+  int Sum 1 = DemoStaticMethods.add (8,4); 
+  int Sum 2 = DemoStaticMethods.sub (9.5); 
+  System.out.Println ("sum: "+ sum 1); 
+  System.out.Println ("difference'"+ Sum 2); 
+ }
+}
+ 

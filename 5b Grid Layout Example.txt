@@ -1,0 +1,26 @@
+import javax.swing.*;
+import java.awt.*;
+public class DemoGridLayout
+{
+	public static void main(String[] args)
+	{
+	   JFrame frame=new JFrame("Grid Layout Example");
+	   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	   frame.setSize(300,300);
+	   JPanel panel=new JPanel(new GridLayout(2,3));
+	   JButton button1=new JButton("Button1");
+	   JButton button2=new JButton("Button2");
+	   JButton button3=new JButton("Button3");
+	   JButton button4=new JButton("Button4");
+	   JButton button5=new JButton("Button5");
+	   JButton button6=new JButton("Button6");
+	   panel.add(button1);
+	   panel.add(button2);
+	   panel.add(button3);
+	   panel.add(button4);
+	   panel.add(button5);
+	   panel.add(button6);
+	   frame.add(panel);
+	   frame.setVisible(true);
+	}
+}
