@@ -1,21 +1,21 @@
-Class DemoStaticMethods
-{
- Public Static int add (int a, int b) 
- {
- return a+b; 
- } 
- Public static int sub (int a, int b) 
- return a-b;
- }
-} 
-Public class Pr1c
-{ 
- Public static void Main (string[] args) 
- {
-  int Sum 1 = DemoStaticMethods.add (8,4); 
-  int Sum 2 = DemoStaticMethods.sub (9.5); 
-  System.out.Println ("sum: "+ sum 1); 
-  System.out.Println ("difference'"+ Sum 2); 
- }
+class DemoStaticMethods {
+    // Static method to add two integers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Static method to subtract two integers
+    public static int sub(int a, int b) {
+        return a - b;
+    }
 }
- 
+
+public class Pr1c {
+    public static void main(String[] args) {
+        int sum1 = DemoStaticMethods.add(8, 4);
+        int sum2 = DemoStaticMethods.sub(9, 5);
+
+        System.out.println("Sum: " + sum1);
+        System.out.println("Difference: " + sum2);
+    }
+}
