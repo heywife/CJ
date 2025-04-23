@@ -1,22 +1,22 @@
-Class OperOver 
+class OperOver {
+    // Method with two parameters
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Overloaded method with three parameters
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
 }
- Public int add (int a, int b) 
- { 
-  return a+b; 
-} 
- public int add (int a, int b, int c) 
- }
-  return a+b+c;
- } 
-} 
- public class Pr2b
-} 
- Public static void main (string [] args) 
- }
-  OperOver ob = new OperOver(); 
-  int Sum1 = ob.add (5,10); 
-  int Sum2 = ob.add (5, 10, 15); 
-  System.out.Println ("sum of integer is." + Sum 1); 
-  System.out.Printin ("sum of integer i's" + sum 2); 
- }
+
+public class Pr1b {
+    public static void main(String[] args) {
+        OperOver ob = new OperOver();
+        int sum1 = ob.add(5, 10);
+        int sum2 = ob.add(5, 10, 15);
+
+        System.out.println("Sum of two integers is: " + sum1);
+        System.out.println("Sum of three integers is: " + sum2);
+    }
 }
