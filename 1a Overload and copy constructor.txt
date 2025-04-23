@@ -1,27 +1,28 @@
-class Myclass 
-{
- Private int a: 
- Public My class() 
- System.out.print in ("Default Constructor"); 
-} 
- Public My Class (int valve) 
-{ 
- a= value; 
- System.out. println ("Parameterized Constructor and value is: " + a); 
-} 
- Public My Class (Myclass Other) 
- { 
-  a = other.a; 
-  System.out.println("Copy Constructor and valve is: " +a); 
- }
+class Myclass {
+    private int a;
+
+    
+    public Myclass() {
+        System.out.println("Default Constructor");
+    }
+
+    
+    public Myclass(int value) {
+        a = value;
+        System.out.println("Parameterized Constructor and value is: " + a);
+    }
+
+   
+    public Myclass(Myclass other) {
+        a = other.a;
+        System.out.println("Copy Constructor and value is: " + a);
+    }
 }
 
-Public Class Pa1a
-{ 
- pulic static void main(String[] args) 
- { 
-  Myclass ob1 = new Myclass (); 
-  Myclass ob2 = new Mycluss (7); 
-  Myclass ob3 = new Myclass (ob2); 
- }
+public class Pr1a {
+    public static void main(String[] args) {
+        Myclass ob1 = new Myclass();        
+        Myclass ob2 = new Myclass(7);       
+        Myclass ob3 = new Myclass(ob2);     
+    }
 }
